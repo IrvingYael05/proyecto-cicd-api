@@ -5,7 +5,6 @@ import os
 app = Flask(__name__)
 DB_NAME = "tareas.db"
 
-# Actualización de prueba
 # Inicializar Base de Datos SQLite
 def init_db():
     conn = sqlite3.connect(DB_NAME)
