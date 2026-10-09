@@ -5,6 +5,7 @@ import os
 app = Flask(__name__)
 DB_NAME = "tareas.db"
 
+# Actualización de prueba
 # Inicializar Base de Datos SQLite
 def init_db():
     conn = sqlite3.connect(DB_NAME)
@@ -33,7 +34,7 @@ def get_db():
 # 1. GET /api/health - Comprobación de salud
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    return jsonify({"status": "ok", "message": "API funcionando correctamente"}), 200
+    return jsonify({"status": "ok-revisando-uteq", "message": "API funcionando correctamente"}), 202
 
 # 2. GET /api/tareas - Listar todas las tareas
 @app.route('/api/tareas', methods=['GET'])
