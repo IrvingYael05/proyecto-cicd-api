@@ -33,7 +33,7 @@ def get_db():
 # 1. GET /api/health - Comprobación de salud
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    return jsonify({"status": "ok-revisando-uteq", "message": "API funcionando correctamente"}), 200
+    return jsonify({"status": "ok", "message": "API funcionando correctamente"}), 200
 
 # 2. GET /api/tareas - Listar todas las tareas
 @app.route('/api/tareas', methods=['GET'])
